@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call(StudentInfoSeeder::class);
-        $this->call(StudentInfoSeeder::class);
+        $this->call(SubjectSeeder::class);
 
     }
 }
