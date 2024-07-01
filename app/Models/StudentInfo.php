@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class StudentInfo extends Model
 {
+    public $table = 'students_info';
+    
     use HasFactory;
     /**
      * The attributes that are mass assignable.
