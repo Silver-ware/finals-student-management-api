@@ -71,7 +71,7 @@ class StudentInfoController extends Controller
     {
         $student_validated = $request->validated();
         $new_student = StudentInfo::create($student_validated);
-        return response()->json($new_student);
+        return response()->json($new_student, 201);
     }
 
     //GET (SPECIFIC)

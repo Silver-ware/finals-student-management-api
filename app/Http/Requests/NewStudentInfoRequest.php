@@ -24,7 +24,7 @@ class NewStudentInfoRequest extends FormRequest
         return [
             'firstname' => 'bail|required|string|max:255',      //Stop at  Validation when
             'lastname'  => 'bail|required|string|max:255',      //  this two failed
-            'birthdate' => 'required|date',
+            'birthdate' => 'required|date_format:Y-m-d',
             'sex'       => 'required|in:MALE,FEMALE',
             'address'   => 'required|string',
             'year'      => 'required|integer|min:1|max:4',
